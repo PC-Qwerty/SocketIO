@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      #message-box {
+        margin: 20px;
+        height: 70vh;
+        width: 100%;
+        border: 2px solid black;
+      }
+      #form {
+        display: flex;
+        gap: 10px;
+      }
+      #message-box div {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message-box"></div>
+    <form id="form">
+      <label for="message-input">Message</label>
+      <input type="text" name="message-input" id="message-input" />
+      <button type="submit" id="send-button">Send</button>
+      <label for="room-input">Room</label>
+      <input type="text" name="room-input" id="room-input" />
+      <button type="submit" id="join-button">Join</button>
+    </form>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
